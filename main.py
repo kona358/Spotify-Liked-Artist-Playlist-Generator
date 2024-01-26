@@ -12,11 +12,11 @@ from spotipy.oauth2 import SpotifyOAuth
 #These are the credentials that allow us to access the Spotify API
 #You can get your own credentials by creating a Spotify Developer account
 #https://developer.spotify.com/dashboard/login
-#You can also use the credentials I have provided below, but I would recommend getting your own
-#If you do use my credentials, please be courteous and don't abuse them
+#be sure to make the redirect uri the same as below
 
-client_id = "14f23c99c6174bc7843cd7864abc22cc"
-client_secret = "b2d3a6bbebe24e69a78b98a446471072"
+
+client_id = "YOURIDHERE"
+client_secret = "YOURSECRETHERE"
 scope = "playlist-modify-public user-library-read"
 token = util.prompt_for_user_token(
     None, scope, client_id, client_secret, redirect_uri="https://localhost:8080"
